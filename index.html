@@ -66,9 +66,6 @@
 
                     <p>Sie sind derzeit nicht angemeldet.</p>
 
-                    <div class="alert alert-danger">
-                        Das hat leider nicht funktioniert. Vielleicht haben Sie ein falsches Passwort eingegeben? Bitte versuchen Sie es erneut.
-                    </div>
 
                     <div class="row">
                         <div class="col-md-6">
@@ -88,10 +85,12 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
+                                    <div class="form-group has-error">
                                         <label class="col-sm-3 control-label" for="id_password">Passwort</label>
                                         <div class="col-sm-6">
-                                            <input class="form-control" id="id_password" name="password" type="password" />
+                                            <input class="form-control" id="id_password" name="password" type="password">
+
+                                            <span class="help-block">Falscher Benutzername oder falsches Passwort.</span>
 
                                         </div>
                                     </div>
